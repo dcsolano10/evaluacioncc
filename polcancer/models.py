@@ -49,9 +49,9 @@ class ParejasSexuales(models.Model):
 	promedio_parejas = models.DecimalField(max_digits=9, decimal_places=6)
 
 class ProbabilidadesBiologicas(models.Model):
-	compartimento_edad = models.ForeignKey(CompartimentoEdad, on_delete=models.PROTECT)
-	compartimento_biologico = models.ForeignKey(CompartimentoBiologico, on_delete=models.PROTECT)
-	probabilidad = models.DecimalField(max_digits=9, decimal_places=6)
+    compartimento_edad = models.ForeignKey(CompartimentoEdad, on_delete=models.PROTECT)
+    compartimento_biologico = models.ForeignKey(CompartimentoBiologico, on_delete=models.PROTECT)
+    probabilidad = models.DecimalField(max_digits=9, decimal_places=6)
 
 class Cobertura(models.Model):
 	compartimento_edad = models.ForeignKey(CompartimentoEdad, on_delete=models.PROTECT)
