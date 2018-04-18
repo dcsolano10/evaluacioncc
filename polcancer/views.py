@@ -3,7 +3,7 @@ from django.template import loader
 
 
 def index(request):
-	template = loader.get_template('polcancer/index.html')
+	template = loader.get_template('polcancer/inicio.html')
 	context = {'gato':'gatito'}
 	return HttpResponse(template.render(context, request))
 
