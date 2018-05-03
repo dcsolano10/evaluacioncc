@@ -38,3 +38,23 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+#page-top {
+	background-color:  #0086b3 !important;
+}
+
+#mainNav {
+	background-color:  #0086b3 !important;
+}
+
+a {
+	color: white !important;
+}
+
+.content-wrapper{
+	padding-left: 10px;
+}
+
+#titleCC{
+	font-weight: bold;
+}
