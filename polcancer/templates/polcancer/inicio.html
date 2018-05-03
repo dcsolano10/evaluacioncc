@@ -34,14 +34,14 @@
             <i class="fa fa-fw fa-table"></i>
             <span class="nav-link-text" >Vaccination scheme</span>
           </a>
-        {% endblock %}
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-          <a class="nav-link">
+          <a class="nav-link" href="{% url 'polcancer:dashboard' %}">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
+        {% endblock %}
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="charts.html">
             <i class="fa fa-fw fa-area-chart"></i>

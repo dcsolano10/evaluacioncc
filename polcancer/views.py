@@ -11,6 +11,11 @@ def vaccination(request):
 	template = loader.get_template('polcancer/vaccination.html')
 	context = {'gato':'gatito'}
 	return HttpResponse(template.render(context, request))
+
+def dashboard(request):
+	template = loader.get_template('polcancer/charts.html')
+	context = {'gato':'gatito'}
+	return HttpResponse(template.render(context, request))
 	
 def population(request):
     return HttpResponse("Vamos a parametrizar el modelo de población")

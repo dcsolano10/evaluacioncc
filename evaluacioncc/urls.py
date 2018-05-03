@@ -22,5 +22,6 @@ urlpatterns = [
     path('polcancer/', include('polcancer.urls')),
     path('admin/', admin.site.urls),
     path('polcancer/vaccination/', views.vaccination, name='vaccination'),
+    path('polcancer/dashboard/', views.dashboard, name='dashboard'),
 
 ] 
