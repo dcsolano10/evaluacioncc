@@ -146,7 +146,25 @@
     <div class="container-fluid">
       <div class="row">
           <h1>Vaccination scheme</h1>
+      </div>
+      <div class="row" id="checks" style="display:none;">
+        <div class="col-lg-4">
+          <p>Which gender(s) you want to apply the vaccine to?</p>
         </div>
+        <div class="col-lg-2">
+          <p>Females:</p>
+        </div>
+        <div class="col-lg-2">
+        <input type="checkbox" id="femCheck">
+        </div>
+        <div class="col-lg-2">
+          <p>Males:</p>
+        </div>
+        <div class="col-lg-2">
+        <input type="checkbox" id="malCheck">
+        </div>
+      </div>
+        <div id="femalesParameters" style="display:none;">
           <div class="row">
             <h3>Parameters for females</h3>
           </div>
@@ -187,6 +205,49 @@
                 </div>
               </form>
         </div>
+      </div>
+        <div id="malesParameters" style="display:none;">
+        <div class="row">
+            <h3>Parameters for males</h3>
+          </div>
+          <br>
+            <div class="form-group">
+              <form>
+                <div class="row">
+                  <div class="col col-lg-4">
+                    <p>Select the age ranges of people to apply the vaccine to:</p>
+                  </div>
+                  <div class="col col-lg-4">
+                    <div class="range-slider">
+                     <input type="text" class="js-range-slider" value="" />
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col col-lg-4">
+                    <p>Select the years to apply the vaccine:</p>
+                  </div>
+                  <div class="col col-lg-4">
+                    <div class="range-slider">
+                     <input type="text" class="js-range-slider-y" value="" />
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col col-lg-4">
+                    <p>Select the porcentage of people to apply the vaccine to:</p>
+                  </div>
+                  <div class="col col-lg-4">
+                    <div class="range-slider">
+                     <input type="text" class="js-range-slider-x" value="" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+        </div>
+      </div>
       </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
@@ -275,15 +336,16 @@
 //      addSpecialAreas(data.slider);
 //    }
 });
+$( document ).ready(function() {
+  $('#checks').toggle();
+});
 
-//function addSpecialAreas ($slider) {
-//  var area = [100, 200];
-//    var $line = $slider.find(".irs-line");
-//    var left_percent = area[0] / (max - min) * 100;
-//    var right_percent = area[1] / (max - min) * 100;
-//    var width_percent = right_percent - left_percent;
-    
-//    $line.append("<div class='area' style='left: " + left_percent + "%; width: " + width_percent + "%;'></div>")
+$('#femCheck').change(function() {
+    $('#femalesParameters').toggle();
+});
+$('#malCheck').change(function() {
+    $('#malesParameters').toggle();
+});
 //}
     </script>
   </div>
