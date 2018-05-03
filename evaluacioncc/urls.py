@@ -23,5 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('polcancer/vaccination/', views.vaccination, name='vaccination'),
     path('polcancer/dashboard/', views.dashboard, name='dashboard'),
+    path('polcancer/screening/', views.screening, name='screening'),
 
 ] 
