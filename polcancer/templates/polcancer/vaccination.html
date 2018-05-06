@@ -18,6 +18,7 @@
   <link href="https://blackrockdigital.github.io/startbootstrap-sb-admin/css/sb-admin.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="http://ionden.com/a/plugins/ion.rangeSlider/static/css/ion.rangeSlider.css">
   <link rel="stylesheet" type="text/css" href="http://ionden.com/a/plugins/ion.rangeSlider/static/css/ion.rangeSlider.skinHTML5.css">
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One|Open-Sans" rel="stylesheet">
   {% load static %}
   <link rel="stylesheet" type="text/css" href="{% static 'polcancer/eSelector.css' %}">
 </head>
@@ -27,7 +28,7 @@
   {% block nav %}
   <nav class="navbar navbar-expand-lg navbar-inverse fixed-top" id="mainNav">
     {% block nav-home %}
-    <a class="navbar-brand" href="{% url 'polcancer:index' %}">CC Policy evaluation</a>
+    <a class="navbar-brand" id="titleCC" href="{% url 'polcancer:index' %}">Cervical cancer policy evaluation</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -146,7 +147,7 @@
     </div>
   </nav>
   {% endblock %}
-  <div class="content-wrapper">
+  <div class="content-wrapper" id="main-content">
     <div class="container-fluid">
       <div class="row">
           <h1>Vaccination scheme</h1>

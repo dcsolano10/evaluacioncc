@@ -30,21 +30,22 @@
 }
 
 .form-group {
-	width: 100%;
-    background-color: #e6e6e6;
+	width: 95%;
+    background-color: #E2F6FB;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    align-content: center;
 }
 
 #page-top {
-	background-color:  #0086b3 !important;
+	background-color:  #006680 !important;
 }
 
 #mainNav {
-	background-color:  #0086b3 !important;
+	background-color:  #006680 !important;
 }
 
 a {
@@ -56,5 +57,9 @@ a {
 }
 
 #titleCC{
-	font-weight: bold;
+	font-family: 'Merienda One', cursive;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
 }
