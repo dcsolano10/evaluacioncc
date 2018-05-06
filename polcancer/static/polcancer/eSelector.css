@@ -63,3 +63,27 @@ a {
 body{
 	font-family: 'Open Sans', sans-serif;
 }
+
+#addScheme{
+	background-color: white !important;
+	border-radius: 4px;
+	border: 2px solid #006680; /* Template blue */
+	color: black;
+}
+
+#addScheme:hover {
+    background-color: #006680!important;
+    border-radius: 4px;
+    border: 2px solid #006680; /* Template blue */
+    color: white;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    display: inline-block;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
